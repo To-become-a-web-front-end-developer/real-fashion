@@ -98,5 +98,180 @@ h4,
 h5,
 h6 {
     color: #282828;
-    -webk
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 0 1px;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection{}
+
+::-webkit-input-placeholder{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #777 !important;
+}
+::-moz-input-placeholder{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #777 !important;
+}
+::-ms-input-placeholder{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #777 !important;
+}
+::input-plcaeholder{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #777777 !important;
+}
+.form-control {
+    color: #db5246;
+}
+section {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.trans_200 {
+    -webkit-transition: all 200 ease;
+    -moz-transition: all 200 ease;
+    -ms-trainsition: all 200 ease;
+    -o-transition: all 200 ease;
+    transition: all 200 ease;
+}
+.trans_300 {
+    -webkit-transition: all 300 ease;
+    -moz-transition: all 300 ease;
+    -ms-trainsition: all 300 ease;
+    -o-transition: all 300 ease;
+    transition: all 300 ease;
+}
+.trans_400{
+    -webkit-transition: all 400 ease;
+    -moz-transition: all 400 ease;
+    -ms-trainsition: all 400 ease;
+    -o-transition: all 400 ease;
+    transition: all 400 ease;
+}
+.trans_500{
+    -webkit-transition: all 500 ease;
+    -moz-transition: all 500 ease;
+    -ms-trainsition: all 500 ease;
+    -o-transition: all 500 ease;
+    transition: all 500 ease;
+}
+.fill_height{
+    height: 100%
+}
+.super_container {
+    width: 100%;
+    overflow: hidden;
+}
+.hide {
+    display: none;
+    transform: translate(9999px);
+    transition: all 1s linear;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(165, 164, 164);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(167, 167, 167);
+}
+
+/* Advertisement */
+.deal_ofthe_week {
+    width: 100%;
+    margin-top: 41px;
+    background: #f2f2f2;
+}
+.deal_ofthe_week_img {
+    height: 540px;
+}
+.deal_ofthe_week_img img {
+    height: 100%;
+}
+.deal_ofthe_week_content{
+    height: 100%;
+}
+.section_title {
+    display: inline-block;
+    text-align: center;
+}
+.section_title h2 {
+    display: inline-block;
+}
+.section_title::after {
+    display: block;
+    position: absolute;
+    top: calc(100% + 13px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: #fe4c50;
+    content: "";
+}
+.timer{
+    margin-top: 66px;
+}
+.timer li {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+}
+.timer li:last-child {
+    margin-right: 0;
+}
+.timer_num {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fe4c50;
+    margin-top: 10px;
+    
 }

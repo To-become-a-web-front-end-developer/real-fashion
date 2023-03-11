@@ -5,6 +5,7 @@ import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import { Advertisement } from "./components/Advertisement";
 import Benefit from "./components/Benefit";
+import CategoryBanner from "./components/CategoryBanner/CategoryBanner";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <div>
       <Advertisement/>
       <Benefit/>
+      <CategoryBanner/>
     </div>
   );
 }

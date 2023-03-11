@@ -275,3 +275,31 @@ section {
     margin-top: 10px;
     
 }
+
+/* Benefit */
+.benefit {
+    margin-top: 74px;
+}
+.benefit_row{
+    background: #f3f3f3;
+}
+.benefit_col {
+    padding-left: 0;
+    padding-right: 0;
+}
+.benefit_item {
+    height: 100px;
+    background: #f3f3f3;
+    border-right: solid 1px #fff;
+    padding-left: 25px;
+}
+.benefit_col:last-child .benefit_item {
+    border-right: none;
+}
+.benefit_icon i {
+    font-size: 30px;
+    color: #fe4c50;
+}
+.benefit_content{
+    padding-left: 22px;
+}

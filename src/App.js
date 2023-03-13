@@ -7,6 +7,10 @@ import { Advertisement } from "./components/Advertisement";
 import Benefit from "./components/Benefit";
 import CategoryBanner from "./components/CategoryBanner/CategoryBanner";
 import Footer from "./components/Footer";
+import Heading from "./components/Heading";
+import HomeBanner from "./components/HomeBanner";
+// import { MobileMenu } from "./components/MobileMenu";
+// import { HomeCartView } from "./components/HomeCartView";
 
 
 function App() {
@@ -17,9 +21,13 @@ function App() {
 
   return (
     <div>
+      {/* <HomeCartView/> */}
+      {/* <MobileMenu/> */}
+      <HomeBanner/>
       <Advertisement/>
       <Benefit/>
       <CategoryBanner/>
+      <Heading/>
       <Footer/>
     </div>
   );

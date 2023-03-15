@@ -1,30 +1,26 @@
-import { useEffect, useState } from "react";
-
-const Auth = () => {
-    const [userToken, setUserToken] = useState(JSON.parse(localStorage.getItem("auth")));
-
-    const getToken = () => {
-        return userToken.token;
+const Auth = {
+    user_token: JSON.parse(localStorage.getItem("auth")) || {},
+    
+    getToken() {
+      return this.user_token.token;
+    },
+  
+    getUserId() {
+      return this.user_token.user_id;
+    },
+  
+    getUserDetails() {
+      return this.user_token;
+    },
+  
+    setUserToken(new_token) {
+      this.user_token = new_token;
+      localStorage.setItem("auth", JSON.stringify(new_token));
+    },
+  
+    logout() {
+      localStorage.removeItem("auth");
     }
-
-    const getUserId = () => {
-        return userToken.user_id;
-    }
-
-    const getUserDetails = () => {
-        return userToken;
-    }
-
-    const logout = () => {
-        localStorage.removeItem("auth");
-    }
-
-    useEffect(() => {
-        localStorage.setItem("auth",JSON.stringify(userToken))
-    },[userToken]);
-
-    return {getToken, getUserId, getUserDetails, logout, setUserToken};
-
-}
-
-export default Auth();
+  };
+  
+  export default Auth;

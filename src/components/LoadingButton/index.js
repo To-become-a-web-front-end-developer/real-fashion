@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import propTypes from "prop-types"
+import "./style.css";
 
 export default function LoadingButton(props) {
     return(

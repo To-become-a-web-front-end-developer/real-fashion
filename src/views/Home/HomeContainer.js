@@ -1,10 +1,7 @@
-import {
-    getAllProducts,
-    applyFilters
-} from "../../redux/actions/productAction";
+import {getAllProducts, applyFilters} from "../../redux/actions/ProductAction";
 import { connect } from "react-redux";
 import Home from "./Home";
-import { postCart } from "../../redux/actions/cartAction";
+import {postCart} from "../../redux/actions/CartAction";
   
 const mapStoreToProps = state => ({
   products: state.product.products,

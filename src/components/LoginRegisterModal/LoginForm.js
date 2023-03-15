@@ -2,7 +2,7 @@ import { useState } from "react"
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { userLogin } from "../../redux/actions/LoginAction";
-import { Validator } from "../../utils/Validator";
+import Validator from "../../utils/Validator";
 import LoadingButton from "../LoadingButton";
 import {EMAIL_RULE, DEFAULT_RULE} from "../../utils/Validator/rule"
 

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Cart from "./Cart";
-import { getCartByUserId, postCart } from "../../redux/actions/cartAction";
+import { getCartByUserId, postCart } from "../../redux/actions/CartAction";
 
 const mapStoreToProps = (state) => ({
   cart: state.cart.cart,

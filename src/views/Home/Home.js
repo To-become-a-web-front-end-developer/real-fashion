@@ -4,7 +4,7 @@ import HomeBanner from "../../components/HomeBanner";
 import CategoryBanner from "../../components/CategoryBanner";
 import NewArrivals from "../../components/Products/NewArrivals";
 import Benefit from "../../components/Benefit";
-import Advertisement from "../../components/Advertisement";
+import {Advertisement} from "../../components/Advertisement";
 import BestSeller from "../../components/Products/BestSeller";
 import LoginRegister from "../../components/LoginRegisterModal";
 import propTypes from "prop-types";

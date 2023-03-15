@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import MediaQuery from "react-responsive/types/Component";
+import MediaQuery from "../../modules/midiaQuery";
 import { Link } from "react-router-dom";
 import device from "../../modules/midiaQuery";
 import { HomeCartView } from "../HomeCartView";
-import MobileMenu from "../MobileMenu";
+import {MobileMenu} from "../MobileMenu";
 
 export default function NavBar({departments,cart,getCartByUserId}) {
     

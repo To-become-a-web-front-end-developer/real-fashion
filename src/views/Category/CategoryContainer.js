@@ -1,10 +1,10 @@
 import {
     getAllProducts,
     applyFilters
-} from "../../redux/actions/productAction";
+} from "../../redux/actions/ProductAction";
 import { connect } from "react-redux";
 import Category from "./Category";
-import { postCart } from "../../redux/actions/cartAction";
+import { postCart } from "../../redux/actions/CartAction";
   
 const mapStoreToProps = state => ({
     products: state.product.products,

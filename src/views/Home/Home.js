@@ -7,7 +7,6 @@ import Benefit from "../../components/Benefit";
 import Advertisement from "../../components/Advertisement";
 import BestSeller from "../../components/Products/BestSeller";
 import LoginRegister from "../../components/LoginRegisterModal";
-import jumTo from "../../modules/Navigation";
 import propTypes from "prop-types";
 
 function Home({products, departments, getAllProducts, postCart}) {

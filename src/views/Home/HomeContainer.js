@@ -11,6 +11,7 @@ const mapStoreToProps = state => ({
   departments: state.department.departments,
   loading: state.product.loading
 });
+
 const mapDispatchToProps = dispatch => ({
   getAllProducts: () => dispatch(getAllProducts()),
   applyFilters: filter_string => dispatch(applyFilters(filter_string)),

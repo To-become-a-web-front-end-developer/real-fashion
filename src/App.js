@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./assets/css/style.css";
 import "./assets/css/responsive.css";
-import Router from "./routes"
+import AppRoutes from "./routes"
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <Router/>
+      <AppRoutes/>
     </div>
   );
 }

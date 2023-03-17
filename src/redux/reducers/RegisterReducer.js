@@ -1,4 +1,4 @@
-import { REGISTER_BEGIN, REGISTER_SUCCESS, REGISTER_FAIL } from "../actions/RegisterAction";
+import { POST_REGISTER_BEGIN, POST_REGISTER_SUCCESS, POST_REGISTER_FAIL } from "../actions/RegisterAction";
 
 const initialState = {
   register_loading: false,
@@ -7,17 +7,17 @@ const initialState = {
 
 const register = (state = initialState, action) => {
   switch (action.type) {
-    case REGISTER_BEGIN:
+    case POST_REGISTER_BEGIN:
       return {
         ...state,
         register_loading: true,
       };
-    case REGISTER_SUCCESS:
+    case POST_REGISTER_SUCCESS:
       return {
         ...state,
         register_loading: false,
       };
-    case REGISTER_FAIL:
+    case POST_REGISTER_FAIL:
       return {
         ...state,
         register_loading: false,

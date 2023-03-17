@@ -14,7 +14,7 @@ import {
     APPLY_FILTERS_BEGIN,
     APPLY_FILTERS_SUCCESS,
     APPLY_FILTERS_FAIL
-} from "../actions/productAction";
+} from "../actions/ProductAction";
   
   const initialState = {
     products: null,
